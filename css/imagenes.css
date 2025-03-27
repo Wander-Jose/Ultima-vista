@@ -1,0 +1,32 @@
+/* Estilos para imágenes */
+.img-encabezado {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease;
+  }
+  
+  .titulo-encabezado {
+    margin: 1rem 0 0.5rem;
+    font-size: 1.3rem;
+    color: var(--secondary-color);
+    font-weight: 600;
+  }
+  
+  .descripción-encabezado {
+    margin: 0 0 1rem;
+    font-size: 0.95rem;
+    color: var(--text-light);
+    line-height: 1.5;
+  }
+  
+  .avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    border: 2px solid white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }

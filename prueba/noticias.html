@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noticias - Última Vista</title>
+    <link rel="stylesheet" href="css/formato.css">
+    <link rel="stylesheet" href="css/noticias.css">
+    <link rel="stylesheet" href="css/imagenes.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script defer src="java/javascrip.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="publicidad">
+            <p>Publicidad</p>
+        </div>
+
+        <div class="logo">
+            <img src="imagenes/logo.png" alt="Última Vista">
+        </div>
+
+        <div class="redes">
+            <div class="social-icons">
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Menú de navegación -->
+    <nav class="navbar">
+        <div class="navbar-logo">Ultima Vista</div>
+        <div class="navbar-toggle" id="toggle-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+        <div class="navbar-links" id="navbar-links">
+            <a href="index.html"><i class="fas fa-home"></i> Inicio</a>
+            <a href="noticias.html" class="active"><i class="fas fa-newspaper"></i> Noticias</a>
+            <div class="dropdown">
+                <a href="#"><i class="fas fa-th-list"></i> Categorías <i class="fas fa-caret-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="politica.html"><i class="fas fa-landmark"></i> Política</a>
+                    <a href="deportes.html"><i class="fas fa-running"></i> Deportes</a>
+                    <a href="tecnologia.html"><i class="fas fa-laptop-code"></i> Tecnología</a>
+                    <a href="cultura.html"><i class="fas fa-theater-masks"></i> Cultura</a>
+                </div>
+            </div>
+            <a href="contacto.html"><i class="fas fa-envelope"></i> Contacto</a>
+            <div class="search-bar">
+                <input type="text" placeholder="Buscar noticias...">
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Carrusel de noticias destacadas -->
+    <section class="carrusel">
+        <div class="carrusel-item active">
+            <img src="imagenes/noticia-destacada1.jpg" alt="Noticia destacada 1">
+            <div class="carrusel-text">
+                <h2>Último momento: Gran avance científico</h2>
+                <p>Investigadores logran un descubrimiento revolucionario en medicina</p>
+                <a href="noticia.html" class="btn-carrusel">Leer más</a>
+            </div>
+        </div>
+        <div class="carrusel-item">
+            <img src="imagenes/noticia-destacada2.jpg" alt="Noticia destacada 2">
+            <div class="carrusel-text">
+                <h2>Elecciones nacionales: Resultados preliminares</h2>
+                <p>Conoce los primeros datos oficiales del proceso electoral</p>
+                <a href="noticia.html" class="btn-carrusel">Leer más</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contenido principal -->
+    <section class="caja-madre">
+        <!-- Sección de últimas noticias -->
+        <div class="seccion-titulo">
+            <h2>Últimas Noticias</h2>
+            <div class="filtros">
+                <span>Ordenar por:</span>
+                <select>
+                    <option>Más recientes</option>
+                    <option>Más populares</option>
+                    <option>Más comentadas</option>
+                </select>
+            </div>
+        </div>
+
+        <section class="cajas-principal">
+            <!-- Noticia principal -->
+            <div class="encabezado">
+                <img class="img-encabezado" src="imagenes/noticia1.jpg" alt="Noticia principal">
+                <div class="noticia-info">
+                    <span class="noticia-categoria">Tecnología</span>
+                    <span class="noticia-fecha">Hace 2 horas</span>
+                </div>
+                <h2 class="titulo-encabezado">Nuevo smartphone rompe récords de ventas</h2>
+                <p class="descripción-encabezado">El último modelo de la marca líder ya superó el millón de unidades vendidas en su primer día...</p>
+                <a href="noticia.html" class="btn-noticia">Leer más</a>
+            </div>
+
+            <!-- Otras noticias importantes -->
+            <div class="noticia-primarias">
+                <img class="img-encabezado" src="imagenes/noticia2.jpg" alt="Noticia 2">
+                <div class="noticia-info">
+                    <span class="noticia-categoria">Deportes</span>
+                    <span class="noticia-fecha">Hace 4 horas</span>
+                </div>
+                <h2 class="titulo-encabezado">Equipo local avanza a final nacional</h2>
+                <p class="descripción-encabezado">Tras emocionante partido, el equipo clasifica a la final del torneo...</p>
+                <a href="noticia.html" class="btn-noticia">Leer más</a>
+            </div>
+
+            <div class="noticia-primarias">
+                <img class="img-encabezado" src="imagenes/noticia3.jpg" alt="Noticia 3">
+                <div class="noticia-info">
+                    <span class="noticia-categoria">Política</span>
+                    <span class="noticia-fecha">Hace 5 horas</span>
+                </div>
+                <h2 class="titulo-encabezado">Gobierno anuncia nuevo paquete económico</h2>
+                <p class="descripción-encabezado">Medidas buscan reactivar sectores afectados por la crisis global...</p>
+                <a href="noticia.html" class="btn-noticia">Leer más</a>
+            </div>
+        </section>
+
+        <!-- Publicidad -->
+        <section class="publicidad2">
+            <h2>Publicidad</h2>
+            <p>Espacio promocional para nuestros patrocinadores</p>
+        </section>
+
+        <!-- Más noticias -->
+        <section class="cajas-principal">
+            <div class="noticia-primarias">
+                <img class="img-encabezado" src="imagenes/noticia4.jpg" alt="Noticia 4">
+                <div class="noticia-info">
+                    <span class="noticia-categoria">Cultura</span>
+                    <span class="noticia-fecha">Hace 6 horas</span>
+                </div>
+                <h2 class="titulo-encabezado">Festival internacional de cine anuncia programación</h2>
+                <p class="descripción-encabezado">Más de 50 películas de 30 países se presentarán en la edición de este año...</p>
+                <a href="noticia.html" class="btn-noticia">Leer más</a>
+            </div>
+
+            <div class="noticia-primarias">
+                <img class="img-encabezado" src="imagenes/noticia5.jpg" alt="Noticia 5">
+                <div class="noticia-info">
+                    <span class="noticia-categoria">Salud</span>
+                    <span class="noticia-fecha">Hace 8 horas</span>
+                </div>
+                <h2 class="titulo-encabezado">Nuevos estudios sobre tratamiento contra enfermedad</h2>
+                <p class="descripción-encabezado">Investigación muestra avances prometedores en el tratamiento de...</p>
+                <a href="noticia.html" class="btn-noticia">Leer más</a>
+            </div>
+
+            <div class="noticia-primarias">
+                <img class="img-encabezado" src="imagenes/noticia6.jpg" alt="Noticia 6">
+                <div class="noticia-info">
+                    <span class="noticia-categoria">Internacional</span>
+                    <span class="noticia-fecha">Hace 10 horas</span>
+                </div>
+                <h2 class="titulo-encabezado">Cumbre global aborda crisis climática</h2>
+                <p class="descripción-encabezado">Líderes mundiales se reúnen para discutir nuevas medidas contra el...</p>
+                <a href="noticia.html" class="btn-noticia">Leer más</a>
+            </div>
+        </section>
+    </section>
+
+    <!-- Noticias secundarias -->
+    <section class="grupo-2-de-noticias">
+        <h3 class="titulo-secundario">Más Noticias</h3>
+        <div class="noticia-secundarias">
+            <img class="avatar" src="imagenes/noticia-thumb1.jpg" alt="">
+            <div class="noticia-secundaria-contenido">
+                <span class="noticia-categoria">Economía</span>
+                <p>Bolsa de valores cierra con alza tras anuncio de la reserva federal</p>
+            </div>
+        </div>
+        <div class="noticia-secundarias">
+            <img class="avatar" src="imagenes/noticia-thumb2.jpg" alt="">
+            <div class="noticia-secundaria-contenido">
+                <span class="noticia-categoria">Educación</span>
+                <p>Universidades anuncian nuevos programas de becas para 2024</p>
+            </div>
+        </div>
+        <div class="noticia-secundarias">
+            <img class="avatar" src="imagenes/noticia-thumb3.jpg" alt="">
+            <div class="noticia-secundaria-contenido">
+                <span class="noticia-categoria">Tecnología</span>
+                <p>Nueva actualización de software corrige vulnerabilidades críticas</p>
+            </div>
+        </div>
+        <div class="noticia-secundarias">
+            <img class="avatar" src="imagenes/noticia-thumb4.jpg" alt="">
+            <div class="noticia-secundaria-contenido">
+                <span class="noticia-categoria">Deportes</span>
+                <p>Atleta nacional rompe récord continental en competencia internacional</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Suscripción -->
+    <section class="suscripcion">
+        <h2>Suscríbete a nuestro boletín</h2>
+        <p>Recibe las noticias más importantes directamente en tu correo</p>
+        <form>
+            <input type="email" placeholder="Ingresa tu correo electrónico" required>
+            <button type="submit">Suscribirse</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Última Vista</h3>
+                <p>Somos un medio de comunicación comprometido con la información veraz y oportuna.</p>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Enlaces Rápidos</h3>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="noticias.html">Noticias</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="#">Aviso Legal</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Categorías</h3>
+                <ul>
+                    <li><a href="politica.html">Política</a></li>
+                    <li><a href="deportes.html">Deportes</a></li>
+                    <li><a href="tecnologia.html">Tecnología</a></li>
+                    <li><a href="cultura.html">Cultura</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Contacto</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Calle Principal 123, Ciudad</p>
+                <p><i class="fas fa-phone"></i> +123 456 7890</p>
+                <p><i class="fas fa-envelope"></i> info@ultimavista.com</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Síguenos</h3>
+                <div class="social-icons">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2023 Última Vista. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
